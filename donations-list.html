@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>سجل التبرعات</title>
+  <link rel="stylesheet" href="files-css/donations-list.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+
+      <a href="index.html">
+        <div class="brand">
+          <div class="heart">♡</div>
+          <h3>زادنا الخير</h3>
+          <p>مطعم السعادة</p>
+        </div>
+      </a>
+
+      <ul class="menu">
+        <li><a href="dashboard.html">لوحة التحكم</a></li>
+        <li><a href="add-donation.html">إضافة تبرع جديد</a></li>
+        <li class="active"><a href="donations-list.html">سجل التبرعات</a></li>
+      </ul>
+
+      <div class="profile">
+        <div class="profile-info">
+          <img src="img/user.png" alt="user">
+          <div>
+            <strong>الشيف خالد</strong>
+            <span>chefob@zad.com</span>
+          </div>
+        </div>
+        <a href="#" class="logout">⎋</a>
+      </div>
+
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="content">
+
+      <h1>سجل التبرعات</h1>
+      <p class="subtitle">قائمة بجميع التبرعات التي قدمها المطعم</p>
+
+      <!-- FILTERS -->
+      <div class="filters">
+        <input type="text" placeholder="بحث في التبرعات">
+
+        <div class="status-filter">
+          <button class="active">الكل</button>
+          <button>متاح</button>
+          <button>مقبول</button>
+          <button>مكتمل</button>
+        </div>
+      </div>
+
+      <h2>جميع التبرعات</h2>
+
+      <!-- TABLE -->
+      <table class="donations">
+        <thead>
+          <tr>
+            <th>وصف التبرع</th>
+            <th>الحالة الحالية</th>
+            <th>تاريخ الإضافة</th>
+            <th>الجمعية القابلة</th>
+            <th>المزيد من المعلومات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>20 وجبة أرز ودجاج</td>
+            <td><span class="badge available">متاح</span></td>
+            <td>منذ 15 دقيقة</td>
+            <td>جمعية سند</td>
+            <td>…</td>
+          </tr>
+
+          <tr>
+            <td>10 وجبات شورما</td>
+            <td><span class="badge cancelled">ملغي</span></td>
+            <td>منذ ساعة</td>
+            <td>جمعية البركة</td>
+            <td>…</td>
+          </tr>
+
+          <tr>
+            <td>30 وجبة مشاوي</td>
+            <td><span class="badge pending">تم القبول</span></td>
+            <td>قبل ثلاث أيام</td>
+            <td>جمعية الخير</td>
+            <td>…</td>
+          </tr>
+
+          <tr>
+            <td>50 وجبة شورما</td>
+            <td><span class="badge completed">مكتمل</span></td>
+            <td>قبل أسبوع</td>
+            <td>جمعية الإحسان</td>
+            <td>…</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- PAGINATION -->
+      <div class="pagination">
+        <button>السابق</button>
+        <button>التالي</button>
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>

@@ -3,25 +3,24 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>زادنا الخير</title>
-  <link rel="stylesheet" href="files-css/log-in.css">
+  <title>إنشاء حساب | زادنا الخير</title>
+  <link rel="stylesheet" href="files-css/log-in2.css">
 </head>
 
 <body>
 
-  <div class="page">
-
+  <div class="container">
     <!-- right-section -->
-    <div class="right">
 
+
+    <div class="right-section">
       <a href="index.html">
         <div class="logo">
           <img src="./IMG/Screenshot 2025-12-24 175339.png" class="heart-icon"> <span>زادنا الخير</span>
         </div>
       </a>
-
       <h2>إنشاء حساب جديد</h2>
-      <p class="subtitle">انضم إلينا في مهمتنا لحفظ النعمة ومساعدة</p>
+      <p class="subtitle">انضم إلينا في مهمتنا لحفظ النعمة ومساعدة المحتاجين</p>
 
       <div class="auth-links">
         <a href="sign-up.html" class="auth-link primary">تسجيل دخول</a>
@@ -35,43 +34,26 @@
           <span>جمعية خيرية</span>
         </a>
 
-        <a href="log-in.html" class="type restaurant active">
+        <a href="log-in2.html" class="type restaurant active">
           <span class="icon">🍴</span>
           <span>مطعم</span>
         </a>
 
       </div>
 
+      <form class="form">
+        <h3>بيانات المسؤول</h3>
 
-      <div class="form-box">
-        <h3>🍴 بيانات المطعم</h3>
+        <input type="text" placeholder="الاسم كامل">
+        <input type="email" placeholder="البريد الإلكتروني">
+        <input type="text" placeholder="رقم الهاتف">
+        <input type="password" placeholder="كلمة المرور">
 
-        <div class="form-row">
-          <div class="input">
-            <label>اسم المطعم</label>
-            <input type="text" placeholder="مثال: مطعم السعادة">
-          </div>
+        <a href="log-in.html" class="btn submit">إنشاء حساب</a>
+      </form>
 
-          <div class="input">
-            <label>جهة الاتصال</label>
-            <input type="text" placeholder="اسم جهة الاتصال">
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="input">
-            <label>العنوان</label>
-            <input type="text" placeholder="العنوان التفصيلي للمقر الرئيسي">
-          </div>
-
-          <div class="input">
-            <label>رقم الترخيص</label>
-            <input type="text" placeholder="رقم السجل التجاري">
-          </div>
-        </div>
-      </div>
-      <a href="log-in.html" class="next-btn">التالي</a>
     </div>
+
     <!--left-section-->
     <div class="left-section">
 
@@ -98,6 +80,8 @@
       </div>
 
     </div>
+
+
   </div>
 
 </body>

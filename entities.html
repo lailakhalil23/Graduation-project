@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>إدارة الكيانات</title>
+    <link rel="stylesheet" href="files-css/entities.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <a href="index.html">
+                <div class="brand">
+                    <div class="heart">♡</div>
+                    <h3>زادنا الخير</h3>
+                    <p>لوحة تحكم المدير</p>
+                </div>
+            </a>
+
+            <ul class="menu">
+                <li><a href="index.html">لوحة التحكم</a></li>
+                <li class="active"><a href="entities.html">إدارة الكيانات</a></li>
+                <li><a href="users.html">إدارة المستخدمين</a></li>
+                <li><a href="donations.html">سجل التبرعات</a></li>
+                <li><a href="roles.html">إدارة الأدوار</a></li>
+            </ul>
+
+            <div class="profile">
+                <div class="profile-info">
+                    <img src="img/user.png" alt="user">
+                    <div>
+                        <strong>محمد حماد</strong>
+                        <span>مدير النظام</span>
+                    </div>
+                </div>
+
+                <a href="login.html" class="logout">⎋</a>
+            </div>
+        </aside>
+
+        <!-- CONTENT -->
+        <main class="content">
+
+            <!-- Top search -->
+            <div class="top-search">
+                <input type="text" placeholder="البحث بالاسم أو رقم الترخيص">
+                <span class="bell">🔔</span>
+            </div>
+
+            <h1 class="page-title">إدارة الكيانات</h1>
+            <p class="page-sub">عرض ومراجعة كل الجمعيات والمطاعم المسجلة</p>
+
+            <!-- Filters -->
+            <div class="filters">
+                <select>
+                    <option>جميع الحالات</option>
+                    <option>مفعّل</option>
+                    <option>معلّق</option>
+                </select>
+
+                <select>
+                    <option>جميع الأنواع</option>
+                    <option>جمعية خيرية</option>
+                    <option>مطعم</option>
+                </select>
+            </div>
+
+            <!-- Table -->
+            <div class="table-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>اسم الكيان</th>
+                            <th>نوع الكيان</th>
+                            <th>رقم الترخيص</th>
+                            <th>جهة الاتصال</th>
+                            <th>حالة الكيان</th>
+                            <th>تاريخ الإنشاء</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>جمعية الإحسان</td>
+                            <td>جمعية خيرية</td>
+                            <td>cn-562-1</td>
+                            <td>معاذ حسن</td>
+                            <td><span class="status active">مفعّل</span></td>
+                            <td>15-12-2025</td>
+                        </tr>
+
+                        <tr>
+                            <td>مطعم السعادة</td>
+                            <td>مطعم</td>
+                            <td>po-365-89</td>
+                            <td>عبيدة مجدي</td>
+                            <td><span class="status suspended">معلّق</span></td>
+                            <td>20-12-2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

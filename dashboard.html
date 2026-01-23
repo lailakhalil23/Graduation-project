@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>لوحة التحكم</title>
+  <link rel="stylesheet" href="files-css/dashboard.css">
+</head>
+
+<body>
+
+  <div class="layout">
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+
+      <a href="index.html">
+        <div class="brand">
+          <div class="heart">♡</div>
+          <h3>زادنا الخير</h3>
+          <p>مطعم السعادة</p>
+        </div>
+      </a>
+
+      <ul class="menu">
+        <li class="active"><a href="dashboard.html">لوحة التحكم</a></li>
+        <li><a href="add-donation.html">إضافة تبرع جديد</a></li>
+        <li><a href="donations-list.html">سجل التبرعات</a></li>
+      </ul>
+
+      <div class="profile">
+        <div class="profile-info">
+          <img src="img/user.png">
+          <div>
+            <strong>الشيف خالد</strong>
+            <span>chefob@zad.com</span>
+          </div>
+        </div>
+        <a href="#" class="logout">⎋</a>
+      </div>
+
+    </aside>
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="content">
+
+      <!-- top actions -->
+      <div class="top-actions">
+        <button class="add-btn">+ تبرع جديد</button>
+      </div>
+
+      <h1 class="title">لوحة التحكم</h1>
+      <p class="subtitle">ملخص لتبرعات المطعم وإحصائيات الأداء</p>
+
+      <!-- stats -->
+      <div class="stats">
+
+        <div class="stat-card">
+          <span class="icon">💚</span>
+          <p>الجمعيات الشريكة</p>
+          <strong>12</strong>
+        </div>
+
+        <div class="stat-card">
+          <span class="icon">⏱</span>
+          <p>نشطة الآن</p>
+          <strong>5</strong>
+        </div>
+
+        <div class="stat-card">
+          <span class="icon">📦</span>
+          <p>كمية الوجبات</p>
+          <strong>85</strong>
+        </div>
+
+        <div class="stat-card">
+          <span class="icon">🤍</span>
+          <p>إجمالي التبرعات</p>
+          <strong>1,245</strong>
+        </div>
+
+      </div>
+
+      <!-- middle section -->
+      <div class="middle">
+        <!-- table -->
+        <div class="table-box">
+          <h3>التبرعات النشطة التي تحتاج إلى قبول أو استلام</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>وصف التبرع</th>
+                <th>الكمية</th>
+                <th>الحالة</th>
+                <th>الوقت</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>وجبة رز ودجاج</td>
+                <td>10 وجبات</td>
+                <td><span class="badge blue">متاح</span></td>
+                <td>منذ 15 دقيقة</td>
+              </tr>
+              <tr>
+                <td>وجبات شاورما</td>
+                <td>30 وجبة</td>
+                <td><span class="badge blue">متاح</span></td>
+                <td>منذ ساعة</td>
+              </tr>
+              <tr>
+                <td>وجبة مشوي</td>
+                <td>10 وجبات</td>
+                <td><span class="badge orange">تم القبول</span></td>
+                <td>قبل ثلاث أيام</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <!-- left box -->
+        <div class="help-box">
+          <p>لديك فائض بالطعام؟</p>
+          <span>ساعد في إطعام المحتاجين اليوم</span>
+          <button>ابدأ الآن</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+
+</html>

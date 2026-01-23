@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>سجل التبرعات</title>
+  <link rel="stylesheet" href="files-css/donations.css">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+
+      <a href="index.html">
+        <div class="brand">
+          <div class="heart">♡</div>
+          <h3>زادنا الخير</h3>
+          <p>لوحة تحكم المدير</p>
+        </div>
+      </a>
+
+      <ul class="menu">
+        <li><a href="sidebar.html">لوحة التحكم</a></li>
+        <li><a href="entities.html">إدارة الكيانات</a></li>
+        <li><a href="users.html">إدارة المستخدمين</a></li>
+        <li class="active"><a href="donations.html">سجل التبرعات</a></li>
+        <li><a href="roles.html">إدارة الأدوار</a></li>
+      </ul>
+
+      <div class="profile">
+        <div class="profile-info">
+          <img src="img/user.png" alt="user">
+          <div>
+            <strong>محمد حماد</strong>
+            <span>مدير النظام</span>
+          </div>
+        </div>
+
+        <a href="login.html" class="logout">⎋</a>
+      </div>
+    </aside>
+
+    <!-- ========== CONTENT ========== -->
+    <main class="content">
+
+      <div class="top-search">
+        <input type="text" placeholder="البحث باسم كيان التبرع أو الجهة المستقبلة">
+        <span class="bell">🔔</span>
+      </div>
+
+      <h1>سجل التبرعات</h1>
+      <p class="subtitle">تتبع حركة التبرعات وحالتها في النظام</p>
+
+      <button class="filter">جميع الحالات ⌄</button>
+
+      <div class="table-box">
+        <table>
+          <thead>
+            <tr>
+              <th>رقم التبرع</th>
+              <th>الكيان المتبرع</th>
+              <th>الجهة المستفيدة</th>
+              <th>الكمية</th>
+              <th>الحالة</th>
+              <th>تاريخ الإنشاء</th>
+              <th>الإجراءات</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>#501</td>
+              <td>مطعم شغوف</td>
+              <td>—</td>
+              <td>50 وجبة</td>
+              <td><span class="status pending">معلّق</span></td>
+              <td>12-10-2025</td>
+              <td>...</td>
+            </tr>
+
+            <tr>
+              <td>#500</td>
+              <td>الشيف وريف</td>
+              <td>جمعية سند</td>
+              <td>30 وجبة</td>
+              <td><span class="status orange">تم التوزيع</span></td>
+              <td>15-12-2025</td>
+              <td>...</td>
+            </tr>
+
+            <tr>
+              <td>#498</td>
+              <td>مطعم التايلندي</td>
+              <td>جمعية البركة</td>
+              <td>10 وجبات</td>
+              <td><span class="status green">تم الاستلام</span></td>
+              <td>12-12-2025</td>
+              <td>...</td>
+            </tr>
+
+            <tr>
+              <td>#480</td>
+              <td>مطعم بالميرا</td>
+              <td>جمعية الخير</td>
+              <td>40 وجبة</td>
+              <td><span class="status red">ملغي</span></td>
+              <td>08-12-2025</td>
+              <td>...</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <button>السابق</button>
+          <button>التالي</button>
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>
