@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+
+}
+
+body {
+    margin: 0;
+    background: #f8f8f8;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+}
+
+/* right-section */
+.right {
+    flex: 1;
+    background: #fff;
+    padding: 40px 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+a span {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.heart-icon {
+    width: 70px;
+    height: 60px;
+    padding: 6px;
+}
+
+
+.subtitle {
+    color: #0aa79b;
+    margin-bottom: 20px;
+}
+
+.auth-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.auth-link {
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+
+.auth-link.primary {
+    background: #0f8b75;
+    color: #fff;
+}
+
+.auth-link.primary:hover {
+    background: #0c6f5e;
+    transform: translateY(-2px);
+}
+
+
+.auth-link.secondary {
+    background: #e6e6e6;
+    color: #555;
+}
+
+.auth-link.secondary:hover {
+    background: #dcdcdc;
+    transform: translateY(-2px);
+}
+
+
+.account-type {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.type {
+    flex: 1;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #d1fae5;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.restaurant:hover {
+    background-color: orange;
+    color: white;
+    border-color: orange;
+}
+
+.charity:hover {
+    background-color: #7dd3a9;
+    color: white;
+    border-color: #7dd3a9;
+}
+
+.form-box {
+    border: 2px solid #7ac943;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.form-box h3 {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.input {
+    flex: 1;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.next-btn {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: #0a8f7a;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* left-section */
+.left-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+.overlay {
+    width: 85%;
+    height: 85%;
+    background: #bdbdbd;
+    border-radius: 40px;
+    position: relative;
+    padding: 40px;
+    overflow: hidden;
+}
+
+
+.overlay h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+
+.hero-img {
+    position: absolute;
+    bottom: 60px;
+    width: 460px;
+    z-index: 2;
+}
+
+
+.cards {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 3;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 18px;
+    width: 220px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+}
+
+.card h4 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.card .icon {
+    font-size: 32px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.card:first-child .icon {
+    color: #f59e0b;
+}
+
+.card:last-child .icon {
+    color: #10b981;
+}

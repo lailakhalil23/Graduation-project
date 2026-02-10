@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+
+}
+
+body {
+    background: #f5fbf9;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 280px;
+    background: #fff;
+    border-left: 1px solid #cfe7df;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brand {
+    text-align: center;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    padding: 8px;
+    border-radius: 14px;
+}
+.brand h3 {
+    color: #0a8f7a;
+    margin-top: 10px;
+}
+
+.brand p {
+    font-size: 13px;
+    color: #777;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.menu li {
+    margin-bottom: 12px;
+}
+
+.menu a {
+    display: block;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu li.active a {
+    background: #000;
+    color: #1fe0b5;
+}
+
+/*  PROFILE  */
+.profile {
+    background: #f2f2f2;
+    padding: 15px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-info img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.profile span {
+    display: block;
+    font-size: 13px;
+    color: #777;
+}
+
+.logout {
+    font-size: 22px;
+    text-decoration: none;
+    color: #555;
+}
+
+.logout:hover {
+    color: #000;
+}
+
+/* ===== CONTENT ===== */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+/* Top search */
+.top-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.top-search input {
+    width: 60%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    background: #e6f8f3;
+    outline: none;
+}
+
+.bell {
+    font-size: 20px;
+}
+
+/* Header */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.page-title {
+    margin-bottom: 5px;
+}
+
+.page-sub {
+    color: #777;
+}
+
+.add-btn {
+    background: #0a8f7a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Section */
+.section-title {
+    color: #0a8f7a;
+    margin-bottom: 15px;
+}
+
+/* Table */
+.table-box {
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #dff0ea;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    color: #0a8f7a;
+    padding: 15px 10px;
+    border-bottom: 1px solid #e0eee8;
+}
+
+tbody td {
+    padding: 18px 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Status */
+.status {
+    padding: 5px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.status.active {
+    background: #e6f8f3;
+    color: #0a8f7a;
+    border: 1px solid #0a8f7a;
+}
+
+.status.suspended {
+    background: #ffecec;
+    color: red;
+    border: 1px solid red;
+}
+
+/* Roles */
+.role {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.role.blue {
+    background: #eef1ff;
+    color: #3a4bd8;
+    border: 1px solid #3a4bd8;
+}
+
+.role.orange {
+    background: #fff3e0;
+    color: #ff9800;
+    border: 1px solid #ff9800;
+}

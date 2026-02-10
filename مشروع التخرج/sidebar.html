@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>لوحة التحكم</title>
+    <link rel="stylesheet" href="files-css/sidebar.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- ========== SIDEBAR ========== -->
+        <aside class="sidebar">
+            <a href="index.html">
+                <div class="brand">
+                     <img src="IMG/img.logo.png" alt="شعار زادنا الخير" class="logo">
+                    <h3>زادنا الخير</h3>
+                    <p>لوحة تحكم المدير</p>
+                </div>
+            </a>
+
+            <ul class="menu">
+                <li class="active"><a href="sidebar.html">لوحة التحكم</a></li>
+                <li><a href="entities.html">إدارة الكيانات</a></li>
+                <li><a href="users.html">إدارة المستخدمين</a></li>
+                <li><a href="donations.html">سجل التبرعات</a></li>
+                <li><a href="roles.html">إدارة الأدوار</a></li>
+            </ul>
+            <div class="profile">
+                <div class="profile-info">
+                    <img src="img/user.png" alt="user">
+                    <div>
+                        <strong>محمد حماد</strong>
+                        <span>مدير النظام</span>
+                    </div>
+                </div>
+
+                <a href="login.html" class="logout">⎋</a>
+            </div>
+        </aside>
+
+        <!-- ========== CONTENT ========== -->
+        <main class="content">
+
+            <!-- Top bar -->
+            <div class="top-bar">
+                <button class="export-btn">تصدير التقرير</button>
+
+                <div class="user-box">
+                    <span>محمد حماد</span>
+                    <button class="logout">⎋</button>
+                </div>
+            </div>
+
+            <h1 class="page-title">لوحة التحكم</h1>
+            <p class="page-sub">نظرة عامة على نشاط النظام والطلبات المعلقة</p>
+
+            <!-- Cards -->
+            <div class="cards">
+
+                <div class="card">
+                    <p>إجمالي المستخدمين</p>
+                    <h2>4,562</h2>
+                    <small class="success">↑ 8% هذا الشهر</small>
+                </div>
+
+                <div class="card">
+                    <p>إجمالي التبرعات</p>
+                    <h2>45</h2>
+                    <small class="success">↑ 12% هذا الشهر</small>
+                </div>
+
+                <div class="card">
+                    <p>إجمالي الكيانات</p>
+                    <h2>1,659</h2>
+                    <small>جمعيات خيرية</small>
+                </div>
+
+                <div class="card">
+                    <p>الكيانات المعلقة</p>
+                    <h2>5</h2>
+                    <small class="danger">بحاجة مراجعة</small>
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="bottom">
+
+                <!-- Tasks -->
+                <div class="box">
+                    <h3>المهام العاجلة <span class="badge">4</span></h3>
+
+                    <ul class="tasks">
+                        <li class="red">جمعية البركة الخيرية</li>
+                        <li class="yellow">تبرع كبير معلق</li>
+                        <li class="blue">تحديث سياسة الخصوصية</li>
+                        <li class="red">مطبخ السعادة</li>
+                    </ul>
+                </div>
+
+                <!-- Comparison -->
+                <div class="box">
+                    <h3 class="center">مقارنة بين تسجيل المستخدمين والكيانات</h3>
+
+                    <div class="compare">
+                        <div>
+                            <p>المستخدمين</p>
+                            <h2>800</h2>
+                        </div>
+
+                        <div class="bar">
+                            <span class="users"></span>
+                            <span class="orgs"></span>
+                        </div>
+
+                        <div>
+                            <p>الكيانات</p>
+                            <h2>450</h2>
+                        </div>
+                    </div>
+
+                    <div class="avg">
+                        <div class="avg-box blue">
+                            متوسط التسجيل اليومي<br><strong>25</strong>
+                        </div>
+                        <div class="avg-box green">
+                            متوسط التسجيل اليومي<br><strong>8</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #222;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 280px;
+    background: #fff;
+    border-left: 1px solid #cfe7df;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brand {
+    text-align: center;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    padding: 8px;
+    border-radius: 14px;
+}
+
+.brand h3 {
+    color: #0a8f7a;
+    margin-top: 10px;
+}
+
+
+.brand p {
+    font-size: 13px;
+    color: #777;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Menu */
+.menu {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.menu li {
+    margin-bottom: 12px;
+}
+
+.menu a {
+    display: block;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+/* Hover + Active */
+.menu a:hover,
+.menu li.active a {
+    background: #000;
+    color: #1fe0b5;
+}
+
+/* profile */
+.profile {
+    background: #f2f2f2;
+    padding: 15px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-info img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.profile span {
+    display: block;
+    font-size: 13px;
+    color: #777;
+}
+
+.logout {
+    font-size: 22px;
+    text-decoration: none;
+    color: #555;
+}
+
+.logout:hover {
+    color: #000;
+}
+
+
+/* ===== MAIN CONTENT ===== */
+.content {
+    flex: 1;
+    padding: 60px;
+}
+
+.content h1 {
+    font-size: 28px;
+}
+
+.subtitle {
+    margin: 10px 0 40px;
+    color: #666;
+}
+
+/* FORM */
+.donation-form {
+    max-width: 800px;
+    border: 1px solid #cfe7df;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.field.full {
+    margin-bottom: 25px;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    padding: 14px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+textarea {
+    border-radius: 15px;
+    height: 120px;
+    resize: none;
+}
+
+.submit-btn {
+    width: 100%;
+    background: #003b33;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #00594e;
+}

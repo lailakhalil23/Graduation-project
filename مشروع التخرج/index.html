@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زادنا الخير ❤</title>
+    <link rel="stylesheet" href="files-css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="IMG/img.logo.png" alt="شعار زادنا الخير">
+            <span>زادنا الخير</span>
+        </div>
+
+
+        <div class="nav-links">
+            <a href="index.html#hero">الرئيسية</a>
+            <a href="index.html#why-us">عن المنصة</a>
+            <a href="index.html#Faq">الأسئلة الشائعة</a>
+            <a href="index.html#contact">تواصل معنا</a>
+        </div>
+
+        <div class="auth-buttons">
+            <a href="sign-up.html" class="signup">تسجيل دخول</a>
+            <a href="log-in3-charity.html" class="login">إنشاء حساب</a>
+        </div>
+
+    </nav>
+
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>معًا نصنع <span class="span">الأمل</span><br>ونبني المستقبل</h1>
+
+            <p>
+                منصة رائدنا الخير هي وجهتك الموثوقة للمساهمة في العمل الخيري وربط أصحاب الخير
+                بالمستحقين بكل شفافية ومصداقية لتعزيز التكامل الاجتماعي
+            </p>
+
+            <div class="hero-buttons">
+                <button class="card">
+                    <div class="card-icon green">👥</div>
+                    <div class="card-text">
+                        <h4>سجل كجمعية</h4>
+                        <span>(متبرع)</span>
+                    </div>
+                    <div class="card-arrow">←</div>
+                </button>
+
+                <button class="card">
+                    <div class="card-icon yellow">🏛️</div>
+                    <div class="card-text">
+                        <h4>سجل كمنشأة</h4>
+                        <span>(مستفيد)</span>
+                    </div>
+                    <div class="card-arrow">←</div>
+                </button>
+            </div>
+        </div>
+        <div class="hero-img-wrapper">
+            <img src="./IMG/photo_5938386603279584500_x.jpg" class="hero-img active">
+            <img src="./IMG/photo_5938386603279584501_x.jpg" class="hero-img">
+            <img src="./IMG/photo_5938386603279584502_x.jpg" class="hero-img">
+        </div>
+        <script>
+            const images = document.querySelectorAll('.hero-img');
+            let current = 0;
+
+            function updateImages() {
+                images.forEach(img => {
+                    img.classList.remove('active', 'prev', 'back');
+                });
+
+                images[current].classList.add('active');
+                images[(current + 1) % images.length].classList.add('prev');
+                images[(current + 2) % images.length].classList.add('back');
+
+                current = (current + 1) % images.length;
+            }
+
+            updateImages();
+            setInterval(updateImages, 4000);
+        </script>
+
+
+    </section>
+
+    <!-- Why Us -->
+    <section class="why-us" id="why-us">
+        <small>مميزاتنا</small>
+        <h2>لماذا تختار زادنا الخير؟</h2>
+        <div class="line"></div>
+
+        <div class="features">
+
+            <div class="feature-card">
+                <div class="feature-icon blue">🛡️</div>
+                <h3>موثوقية وشفافية</h3>
+                <p>
+                    ضمان وصول الدعم لمستحقيه بكل وضوح
+                    ومتابعة دقيقة.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon yellow">👥</div>
+                <h3>شراكة مجتمعية</h3>
+                <p>
+                    ربط بين الجمعيات الخيرية والمتبرعين لتعزيز
+                    المسؤولية الاجتماعية.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon green">🤝</div>
+                <h3>سهولة الاستخدام</h3>
+                <p>
+                    واجهة مستخدم بسيطة وسلسة تمكّنك من التبرع أو الاستفادة
+                    بكل يسر.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--    Faq -->
+    <section class="faq" id="Faq">
+        <div class="faq-header">
+            <small>الدعم والمساعدة</small>
+            <h2>الأسئلة الشائعة</h2>
+            <p>إليك إجابات أكثر الأسئلة تداولًا حول المنصة</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                كيف يمكنني التسجيل كجمعية خيرية؟
+                <span>⌄</span>
+            </div>
+            <div class="faq-answer">
+                يمكنك التسجيل عبر إنشاء حساب جديد واختيار نوع الحساب (جمعية خيرية) ثم تعبئة البيانات المطلوبة.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                هل الخدمة مجانية؟
+                <span>⌄</span>
+            </div>
+            <div class="faq-answer">
+                نعم، استخدام منصة زادنا الخير مجاني بالكامل.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                كيف أضمن وصول تبرعاتي؟
+                <span>⌄</span>
+            </div>
+            <div class="faq-answer">
+                نضمن الشفافية من خلال تتبع التبرعات والتقارير الدورية.
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <!-- Contact Us -->
+    <section class="contact" id="contact">
+        <div class="contact-header">
+            <small>تواصل معنا</small>
+            <h2>نحن هنا لمساعدتك</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="contact-container">
+
+            <!-- معلومات التواصل -->
+            <div class="contact-info">
+
+                <div class="info-card">
+                    <div class="info-icon email">✉️</div>
+                    <div>
+                        <h4>البريد الإلكتروني</h4>
+                        <p>Zadnaelkahir@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon phone">📞</div>
+                    <div>
+                        <h4>الهاتف</h4>
+                        <p>0598082027</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon location">📍</div>
+                    <div>
+                        <h4>المقر الرئيسي</h4>
+                        <p>فلسطين - غزة</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- نموذج الإرسال -->
+            <form class="contact-form">
+                <h3>أرسل لنا رسالة</h3>
+
+                <div class="form-group">
+                    <input type="text" placeholder="الاسم">
+                    <input type="email" placeholder="البريد الإلكتروني">
+                </div>
+
+                <input type="text" placeholder="الموضوع">
+
+                <textarea placeholder="اكتب تفاصيل رسالتك هنا"></textarea>
+
+                <button type="submit">إرسال الرسالة</button>
+            </form>
+
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <!-- About -->
+            <div class="    ">
+                <div class="footer-logo">
+                    <span class="heart">🤍</span>
+                    <h3>زادنا الخير</h3>
+                </div>
+                <p class="footer-desc">
+                    منصة رقمية تهدف لتعزيز التكافل الاجتماعي
+                    وتسهيل وصول المساعدات لمستحقيها بكل شفافية.
+                </p>
+
+                <div class="social-icons">
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h4 class="footer-title greon">روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#why-us">عن المنصة</a></li>
+                    <li><a href="index.html#Faq">الأسئلة الشائعة</a></li>
+                    <li><a href="index.html#contact">تواصل معنا</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-col">
+                <h4 class="footer-title lime">معلومات التواصل</h4>
+                <ul class="contact-list">
+                    <li>📍 فلسطين - غزة</li>
+                    <li>📞 0598082027</li>
+                    <li>✉️ Zadnaelkahir@gmail.com</li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-col">
+                <h4 class="footer-title orange">انضم إلينا</h4>
+                <div class="newsletter">
+                    <input type="email" placeholder="بريدك الإلكتروني">
+                    <button>اشترك</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom-wrapper">
+            <div class="container footer-bottom">
+                <p>© جميع الحقوق محفوظة 2025</p>
+
+                <div class="footer-links">
+                    <a href="#">شروط الاستخدام</a>
+                    <a href="#">سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>إضافة تبرع جديد</title>
+  <link rel="stylesheet" href="files-css/add-donation.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+
+    <a href="index.html">
+      <div class="brand">
+    <img src="IMG/img.logo.png" alt="شعار زادنا الخير" class="logo">
+      <h3>زادنا الخير</h3>
+      <p>مطعم السعادة</p>
+    </div>
+    </a>
+
+    <ul class="menu">
+      <li><a href="dashboard.html">لوحة التحكم</a></li>
+      <li class="active"><a href="add-donation.html">إضافة تبرع جديد</a></li>
+      <li><a href="donations-list.html">سجل التبرعات</a></li>
+    </ul>
+
+    <div class="profile">
+      <div class="profile-info">
+        <img src="img/user.png" alt="user">
+        <div>
+          <strong>الشيف خالد</strong>
+          <span>chefob@zad.com</span>
+        </div>
+      </div>
+      <a href="#" class="logout">⎋</a>
+    </div>
+
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="content">
+
+    <h1>إضافة تبرع جديد</h1>
+    <p class="subtitle">نموذج مفصل لإدخال بيانات التبرع الجديد</p>
+
+    <form class="donation-form">
+
+      <div class="row">
+        <div class="field">
+          <label>وصف الوجبة</label>
+          <input type="text">
+        </div>
+
+        <div class="field">
+          <label>الكمية</label>
+          <input type="number">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label>الوحدة</label>
+          <input type="text">
+        </div>
+
+        <div class="field">
+          <label>تاريخ ووقت توفر الطعام</label>
+          <input type="datetime-local">
+        </div>
+      </div>
+
+      <div class="field full">
+        <label>معلومات انتهاء الصلاحية</label>
+        <textarea></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        إرسال التبرع الآن
+      </button>
+
+    </form>
+
+  </main>
+
+</div>
+
+</body>
+</html>

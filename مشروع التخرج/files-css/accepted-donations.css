@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  background: #fff;
+  display: flex;
+  height: 100vh;
+  color: #222;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 280px;
+  border-left: 1px solid #cfe7df;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brand {
+  text-align: center;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    padding: 8px;
+    border-radius: 14px;
+}
+
+.brand h3 {
+  color: #0a8f7a;
+  margin-top: 10px;
+}
+
+.brand p {
+  color: #777;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  margin-top: 40px;
+}
+
+.menu li {
+  margin-bottom: 15px;
+}
+
+.menu a {
+  display: block;
+  padding: 14px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu li.active a {
+  background: #000;
+  color: #1fe0b5;
+}
+
+/* PROFILE */
+.profile {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-info {
+  display: flex;
+  gap: 10px;
+}
+
+.avatar {
+  background: #e6f8f3;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== MAIN ===== */
+.main {
+  flex: 1;
+  padding: 40px 60px;
+}
+
+/* ===== TITLE ===== */
+.page-title {
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+.page-title h1 {
+  font-size: 28px;
+}
+
+.page-title p {
+  color: #777;
+  margin-top: 5px;
+  max-width: 600px;
+}
+
+/* ===== DONATION CARD ===== */
+.donation-card {
+  border: 2px solid #9be3c7;
+  border-radius: 25px;
+  padding: 25px 30px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.donation-info h3 {
+  font-size: 18px;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.status {
+  background: #1b9e6b;
+  color: #fff;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.donation-info p {
+  color: #0a8f7a;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.details {
+  color: #777;
+  font-size: 14px;
+}
+
+/* ===== BUTTON ===== */
+.confirm-btn {
+  background: #cceecf;
+  color: #0a8f7a;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background: #b5e6bd;
+}
